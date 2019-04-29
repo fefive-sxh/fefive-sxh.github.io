@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="数学,">
 
 
 
@@ -79,13 +79,22 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Fefive">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta name="description" content="两种理解我们都会解这种方程组吧，三个式子通过加减消元（高斯消元）来解这类方程组，而解的内容只与未知变量前面的系数有关，其实我们并不关心未知变量到底是不是x,y,z，只需要知道对应的位置就行。（若第三个方程x前面的系数≠0的话，解肯定会改变的。） 所以，我们可以把系数提取出来按照原来的位置放在一起，便构成了矩阵，若等号右边存在非0元素的话，把整体（等号左边和右边）放在一起便构成了增广矩阵。关于矩阵">
+<meta name="keywords" content="数学">
+<meta property="og:type" content="article">
+<meta property="og:title" content="（一）由浅入深——从线性方程组开始">
+<meta property="og:url" content="http://yoursite.com/2019/04/29/1/index.html">
 <meta property="og:site_name" content="Fefive">
+<meta property="og:description" content="两种理解我们都会解这种方程组吧，三个式子通过加减消元（高斯消元）来解这类方程组，而解的内容只与未知变量前面的系数有关，其实我们并不关心未知变量到底是不是x,y,z，只需要知道对应的位置就行。（若第三个方程x前面的系数≠0的话，解肯定会改变的。） 所以，我们可以把系数提取出来按照原来的位置放在一起，便构成了矩阵，若等号右边存在非0元素的话，把整体（等号左边和右边）放在一起便构成了增广矩阵。关于矩阵">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/2019/04/29/1/01.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/04/29/1/02.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/04/29/1/03.jpg">
+<meta property="og:updated_time" content="2019-04-29T05:16:07.950Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Fefive">
+<meta name="twitter:title" content="（一）由浅入深——从线性方程组开始">
+<meta name="twitter:description" content="两种理解我们都会解这种方程组吧，三个式子通过加减消元（高斯消元）来解这类方程组，而解的内容只与未知变量前面的系数有关，其实我们并不关心未知变量到底是不是x,y,z，只需要知道对应的位置就行。（若第三个方程x前面的系数≠0的话，解肯定会改变的。） 所以，我们可以把系数提取出来按照原来的位置放在一起，便构成了矩阵，若等号右边存在非0元素的话，把整体（等号左边和右边）放在一起便构成了增广矩阵。关于矩阵">
+<meta name="twitter:image" content="http://yoursite.com/2019/04/29/1/01.jpg">
 
 
 
@@ -115,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/">
+  <link rel="canonical" href="http://yoursite.com/2019/04/29/1/">
 
 
 
 
 
-  <title>归档 | Fefive</title>
+  <title>（一）由浅入深——从线性方程组开始 | Fefive</title>
   
 
 
@@ -140,7 +149,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -244,247 +253,154 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/29/1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="sxh">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Fefive">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">（一）由浅入深——从线性方程组开始</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-29T12:35:26+08:00">
+                2019-04-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 6 篇日志。 继续努力。
-      </span>
 
-      
-
-        
-        
-        
-
-        
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2019">2019</h1>
-          </div>
-        
-        
+            
+          
 
-        
+          
+          
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/04/29/1/" itemprop="url">
-              
-                <span itemprop="name">（一）由浅入深——从线性方程组开始</span>
-              
-            </a>
-        
-      </h2>
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-04-29T12:35:26+08:00" content="2019-04-29">
-          04-29
-        </time>
-      </div>
+          
 
-    </header>
-  </article>
+        </div>
+      </header>
+    
 
-
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/04/23/5/" itemprop="url">
-              
-                <span itemprop="name">我所理解的线性代数--绪论</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-04-23T22:01:20+08:00" content="2019-04-23">
-          04-23
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/04/22/记什么是番号以及如蛤使用番号/" itemprop="url">
-              
-                <span itemprop="name">记什么是番号以及如蛤使用番号</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-04-22T20:09:55+08:00" content="2019-04-22">
-          04-22
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+      
+        <p><img src="/2019/04/29/1/01.jpg" alt="01"></p>
+<h3 id="两种理解"><a href="#两种理解" class="headerlink" title="两种理解"></a>两种理解</h3><p>我们都会解这种方程组吧，三个式子通过加减消元（高斯消元）来解这类方程组，而解的内容只与未知变量前面的系数有关，其实我们并不关心未知变量到底是不是x,y,z，只需要知道对应的位置就行。（若第三个方程x前面的系数≠0的话，解肯定会改变的。）</p>
+<p>所以，我们可以把系数提取出来按照原来的位置放在一起，便构成了矩阵，若等号右边存在非0元素的话，把整体（等号左边和右边）放在一起便构成了<strong>增广矩阵</strong>。关于<strong>矩阵</strong>，以后会详细讲并且可能会花大量的时间。</p>
+<p>仔细观察上面这个式子，从列来看，x,y,z前面的系数分别是(1,3,0)，(2,8,4)，(1,1,1)。把x y z提取出来上面的式子变成这样，</p>
+<p><img src="/2019/04/29/1/02.jpg" alt="02"></p>
+<p>所以，上面的方程组也可以理解为用等号左边的三个向量的线性组合来表示右边的向量。线性组合的系数便是x,y,z的值。</p>
+<p>将系数提取出来构成矩阵，将未知变量写成列向量，如下图所示。</p>
+<p><img src="/2019/04/29/1/03.jpg" alt="03"></p>
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/04/18/学习笔记-Python数据分析（一）/" itemprop="url">
-              
-                <span itemprop="name">学习笔记-Python数据分析（一）</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-04-18T12:59:06+08:00" content="2019-04-18">
-          04-18
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/04/06/数学思潮/" itemprop="url">
-              
-                <span itemprop="name">数学思潮</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-04-06T20:49:36+08:00" content="2019-04-06">
-          04-06
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/04/05/hello-world/" itemprop="url">
-              
-                <span itemprop="name">Hello World</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-04-05T17:26:16+08:00" content="2019-04-05">
-          04-05
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/数学/" rel="tag"># 数学</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/04/23/5/" rel="next" title="我所理解的线性代数--绪论">
+                <i class="fa fa-chevron-left"></i> 我所理解的线性代数--绪论
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -492,6 +408,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -512,8 +432,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -589,6 +518,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#两种理解"><span class="nav-number">1.</span> <span class="nav-text">两种理解</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -729,6 +674,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
