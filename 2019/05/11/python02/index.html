@@ -79,18 +79,38 @@
 
 
 
-<meta name="description" content="列表 列表类似于c语言中的数组，但是列表是可变的，可以修改其内容，而且列表中的成员类型可以是不同的。 函数list 可以通过list()函数创建一个列表，任何的序列都可以作为list的参数。">
+<meta name="description" content="列表 列表类似于c语言中的数组，但是列表是可变的，可以修改其内容，而且列表中的成员类型可以是不同的。 函数list 可以通过list()函数创建一个列表，任何的序列都可以作为list的参数。 要将字符列表转换为字符串，可以用下面的表达式： 1&apos;&apos;.join(list)	#list是要转换的列表  列表的基本操作 1.修改列表：给元素赋值 使用索引给特定位置的元素赋值。  注意：修改列表只能在原来列">
 <meta name="keywords" content="python">
 <meta property="og:type" content="article">
 <meta property="og:title" content="02.python中的主力--列表">
 <meta property="og:url" content="http://yoursite.com/2019/05/11/python02/index.html">
 <meta property="og:site_name" content="Fefive">
-<meta property="og:description" content="列表 列表类似于c语言中的数组，但是列表是可变的，可以修改其内容，而且列表中的成员类型可以是不同的。 函数list 可以通过list()函数创建一个列表，任何的序列都可以作为list的参数。">
+<meta property="og:description" content="列表 列表类似于c语言中的数组，但是列表是可变的，可以修改其内容，而且列表中的成员类型可以是不同的。 函数list 可以通过list()函数创建一个列表，任何的序列都可以作为list的参数。 要将字符列表转换为字符串，可以用下面的表达式： 1&apos;&apos;.join(list)	#list是要转换的列表  列表的基本操作 1.修改列表：给元素赋值 使用索引给特定位置的元素赋值。  注意：修改列表只能在原来列">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-15T01:44:09.779Z">
+<meta property="og:image" content="http://yoursite.com/2019/05/11/python02/01.png">
+<meta property="og:image" content="http://yoursite.com/2019/05/11/python02/02.png">
+<meta property="og:image" content="http://yoursite.com/2019/05/11/python02/03.png">
+<meta property="og:image" content="http://yoursite.com/2019/05/11/python02/04.png">
+<meta property="og:image" content="http://yoursite.com/2019/05/11/python02/05.png">
+<meta property="og:image" content="http://yoursite.com/2019/05/11/python02/06.png">
+<meta property="og:image" content="http://yoursite.com/2019/05/11/python02/07.png">
+<meta property="og:image" content="http://yoursite.com/2019/05/11/python02/08.png">
+<meta property="og:image" content="http://yoursite.com/2019/05/11/python02/09.png">
+<meta property="og:image" content="http://yoursite.com/2019/05/11/python02/010.png">
+<meta property="og:image" content="http://yoursite.com/2019/05/11/python02/011.png">
+<meta property="og:image" content="http://yoursite.com/2019/05/11/python02/012.png">
+<meta property="og:image" content="http://yoursite.com/2019/05/11/python02/013.png">
+<meta property="og:image" content="http://yoursite.com/2019/05/11/python02/014.png">
+<meta property="og:image" content="http://yoursite.com/2019/05/11/python02/015.png">
+<meta property="og:image" content="http://yoursite.com/2019/05/11/python02/016.png">
+<meta property="og:image" content="http://yoursite.com/2019/05/11/python02/017.png">
+<meta property="og:image" content="http://yoursite.com/2019/05/11/python02/019.png">
+<meta property="og:image" content="http://yoursite.com/2019/05/11/python02/020.png">
+<meta property="og:updated_time" content="2019-05-15T08:36:01.879Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="02.python中的主力--列表">
-<meta name="twitter:description" content="列表 列表类似于c语言中的数组，但是列表是可变的，可以修改其内容，而且列表中的成员类型可以是不同的。 函数list 可以通过list()函数创建一个列表，任何的序列都可以作为list的参数。">
+<meta name="twitter:description" content="列表 列表类似于c语言中的数组，但是列表是可变的，可以修改其内容，而且列表中的成员类型可以是不同的。 函数list 可以通过list()函数创建一个列表，任何的序列都可以作为list的参数。 要将字符列表转换为字符串，可以用下面的表达式： 1&apos;&apos;.join(list)	#list是要转换的列表  列表的基本操作 1.修改列表：给元素赋值 使用索引给特定位置的元素赋值。  注意：修改列表只能在原来列">
+<meta name="twitter:image" content="http://yoursite.com/2019/05/11/python02/01.png">
 
 
 
@@ -334,6 +354,74 @@
 <p>列表类似于c语言中的数组，但是列表是可变的，可以修改其内容，而且列表中的成员类型可以是不同的。</p>
 <p><strong>函数list</strong></p>
 <p>可以通过list()函数创建一个列表，任何的序列都可以作为list的参数。</p>
+<p>要将字符列表转换为字符串，可以用下面的表达式：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">''</span>.join(list)	<span class="comment">#list是要转换的列表</span></span><br></pre></td></tr></table></figure>
+<p><img src="/2019/05/11/python02/01.png" alt></p>
+<p><strong><em>列表的基本操作</em></strong></p>
+<p><strong>1.修改列表：给元素赋值</strong></p>
+<p>使用索引给特定位置的元素赋值。</p>
+<p><img src="/2019/05/11/python02/02.png" alt></p>
+<p>注意：修改列表只能在原来列表长度范围内赋值。不可以超出其原来的长度。</p>
+<p><strong>2.删除元素</strong></p>
+<p>只需要用del语句即可。</p>
+<p><img src="/2019/05/11/python02/03.png" alt></p>
+<p><strong>3.给切片赋值</strong></p>
+<p>切片是极其强大的功能，而能给切片赋值让这个功能更加强大。而切片赋值可以将原来列表变成与原来长度不同的序列。</p>
+<p><img src="/2019/05/11/python02/04.png" alt></p>
+<p><img src="/2019/05/11/python02/05.png" alt></p>
+<p>使用切片赋值还可以在不替换原有元素的情况插入新元素。</p>
+<p><img src="/2019/05/11/python02/06.png" alt></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">numbers[<span class="number">1</span>:<span class="number">1</span>]= [<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>] <span class="comment">#这个语句是说我在numbers[1:1] 长度区间是在numbers[1]的位置插入[2,3,4]</span></span><br><span class="line">numbers[<span class="number">1</span>:<span class="number">3</span>] = [<span class="number">7</span>,<span class="number">8</span>] <span class="comment">#将numbers[1]赋值为7，将numbers[2]赋值为8</span></span><br><span class="line"><span class="keyword">del</span> numbers[<span class="number">1</span>:<span class="number">4</span>]	 <span class="comment">#这个语句等价于下面这个语句</span></span><br><span class="line">numbers[<span class="number">1</span>:<span class="number">3</span>] = []</span><br></pre></td></tr></table></figure>
+<p><strong>列表方法</strong></p>
+<p>方法是与对象（列表、数、字符串等）联系紧密的函数。通常，像下面这样的调用方法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">object.method(arguments)</span><br></pre></td></tr></table></figure>
+<p><em>1.append</em></p>
+<p><em>append</em>方法用于在列表末尾添加一个对象。</p>
+<p><img src="/2019/05/11/python02/07.png" alt></p>
+<p><em>2.clear</em></p>
+<p><em>clear</em>方法可以清空列表的内容</p>
+<p><img src="/2019/05/11/python02/08.png" alt></p>
+<p><em>3.copy</em></p>
+<p>copy方法可以复制列表。常规复制只是将另一个名称关联到列表。</p>
+<p><img src="/2019/05/11/python02/09.png" alt></p>
+<p><img src="/2019/05/11/python02/010.png" alt></p>
+<p><em>4.count</em></p>
+<p>count方法可以计算指定的元素在列表中出现多少次。</p>
+<p><img src="/2019/05/11/python02/011.png" alt></p>
+<p><em>5.extend</em></p>
+<p>extend方法可以同时将多个值附加到列表末尾，所以可以用此方法将一个列表扩展到另外一个列表。（注意到，extend方法不会返回任何值）</p>
+<p><img src="/2019/05/11/python02/012.png" alt></p>
+<p>这个类似拼接，但是与拼接有一个差别，extend方法会改变原序列，而常规的拼接中，情况是返回一个全新的列表。</p>
+<p><img src="/2019/05/11/python02/013.png" alt></p>
+<p>如果想用拼接达到extend的效果，可用这个命令，不过拼接的效率比extend低。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a += b <span class="comment">#等价于 a = a+b</span></span><br></pre></td></tr></table></figure>
+<p><em>6.index</em></p>
+<p><em>index</em>方法在列表中查找指定值第一次出现的索引。 </p>
+<p><em>7.insert</em></p>
+<p><em>insert</em>方法用于将一个对象插入列表。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lst.insert(<span class="number">5</span>,<span class="string">'插入的对象'</span>) <span class="comment">#第一个参数代表在列表索引为5下插入某个对象</span></span><br></pre></td></tr></table></figure>
+<p><img src="/2019/05/11/python02/014.png" alt></p>
+<p><em>8.pop</em></p>
+<p><em>pop</em>方法从列表中删除一个元素（末尾为后一个元素），并返回这一元素。 </p>
+<p>使用pop()方法可以实现数据结构–栈的操作，栈是后进先出（LIFO）。</p>
+<p><strong><em>pop()方法是唯一修改列表又返回一个非None值的列表方法。</em></strong></p>
+<p><img src="/2019/05/11/python02/015.png" alt></p>
+<p><em>9.remove</em></p>
+<p><em>remove</em>方法用于删除第一个为指定值的元素。 </p>
+<p><img src="/2019/05/11/python02/016.png" alt></p>
+<p><em>10.reverse</em></p>
+<p><em>reverse</em>方法按相反的顺序排列列表中的元素。</p>
+<p><img src="/2019/05/11/python02/017.png" alt></p>
+<p><em>11.sort</em></p>
+<p><em>sort</em>方法用于对列表就地排序，就地排序意味着对原来的列表进行修改，使其元素按顺序 排列，而不是返回排序后的列表的副本。</p>
+<p><img src="/2019/05/11/python02/019.png" alt></p>
+<p>此外，可以使用sorted()方法，这个函数适用于任何序列，但总是返回一个列表。</p>
+<p><img src="/2019/05/11/python02/020.png" alt></p>
+<p><em>12.高级排序</em></p>
+<p>sort()方法接受两个可以选择的参数，key和reverse。</p>
+<p>key：可以将其设置为一个用于排序的函数，用它为每一个元素创建一个键，再根据这些键对元素进行排序。</p>
+<p>reverse： 设置为True或者Flase,是否对序列逆序排序。</p>
+<p>如果你想更深入地了解排序，可以参阅文章“<a href="https://wiki.python.org/moin/HowTo/Sorting" target="_blank" rel="noopener">Sorting Mini-HOW TO”</a>。 </p>
 
       
     </div>
