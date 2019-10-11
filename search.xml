@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Ken_Thompson]]></title>
+    <url>%2F2019%2F10%2F11%2FKen-Thompson%2F</url>
+    <content type="text"><![CDATA[他改变了世界这几天都是关于Ken Thompson 一个 Unix 旧密码被破解的消息，我从网上看有关密码的含义： 在 Ken 的密码（ p/q2-q4! ）中，p 代表 Pawn（卒/兵），他密码表示国际象棋中的一步走棋（见图5），这步棋被称为 Queen’s Pawn Opening，是常见的开局走棋。 此外，感叹号 ！在记谱法表示这是一步好棋。 （ p/q2-q4 ）采用的记谱法，就是国际象棋的描述性记谱法，不过该记谱法 1981 年被弃用了。 当然我不懂国际象棋，但是至少Ken应该是一个国际象棋的爱好者，这是我参考维基百科推断的。 他曾制造过专门用于下国际象棋的计算机“Belle”，并创建了残局数据库。 Ken不需要加各种头衔来显示自己的厉害之处，比如说他毕业于伯克利分校获得电子工程学位这样的屁话，再比如获得什么什么奖之类的去吓唬人。当然这种什么什么奖指的是没什么含量的奖，但是他确实获得过许多世界上有名的大奖，比如图灵奖，计算机先驱奖等。 1966年，ken加入了贝尔实验室，并参加了一个名叫 Mnltics 的系统项目，我们都知道最终这个项目失败了，但是在开发过程中，他创造了B语言（C语言的前身）。由于对游戏的热爱，在这个期间，他编写了星际旅行这款游戏，由于游戏在GE-635这个机器上反应速度太慢了，恰好又发现了一台闲置的PDP-7，于是Ken和Ritchie将星际旅行的程序移植到了PDP-7上。 在YouTube上看到他谈Unix，他说，当年只是为了想好好的玩游戏，所以才开发出来了Unix，对他来说，Unix只是他自己的玩意儿。他对二进制十分感兴趣，被这种逻辑所吸引。 图片来源 https://youtu.be/g3jOJfrOknA 第一版的Unix是基于B语言开发出来的，后来Ritchie和他一起开发Unix，在B语言的基础上开发了C语言，而Unix系统的开发也帮助了C语言的发展，以至于影响到我们每一个人的生活，不像某些企业家天天口嗨要改变世界，而世界却悄悄的在某些实干家的努力下改变了。有些人说要让世界变得更美好，却开始转入卖电子烟（–这种比传统香烟危害更大）的行当，挣着昧良心的钱，最后让人家的身体健康恶化速度急剧提升。不知道他的粉丝会不会默默的流下眼泪。 大家应该都知道UTF-8这个编码吧，这个已经成为各种互联网的主要字符编码。嗯，，，就是Ken和Rob pike一起设计并实现的。是吧，这些人都很牛逼，Ken设计了B语言（C的前身）以及Unix，创造的ed编辑器，某种程度上来说是vi编辑器的祖宗，后来他又加入了Google。这个Rob Pike也很牛逼，他就是那个大名鼎鼎的在Google享有单字母邮箱待遇的大牛，同时，他和Ken一起开发了Go语言。 回到这个事件，Ken收到邮件后只回复了一个单词：祝贺！其实，Ken是一个不善言辞的人。2008年，一群计算机爱好者找到了Unix第一个版本的源码并将这些源码运行成功后发邮件告诉Ken，Ken只回复了一个单词：amazing。 在2000年12月，57岁的他离开了贝尔实验室，成为了一名飞行员，也许很大程度上是因为他的父亲是一名飞行员吧。 最后，希望他健康长寿！]]></content>
+      <tags>
+        <tag>计算机历史</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[poisson]]></title>
+    <url>%2F2019%2F09%2F21%2Fpoisson%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[Django学习笔记(1)]]></title>
     <url>%2F2019%2F08%2F11%2Fdjango01%2F</url>
     <content type="text"><![CDATA[环境: Python3.6 Ubuntu django2.2 pycharm 社区版 如何新建一个web框架工程1django-admin startproject mysite #其中mysite是自己定义的工程文件名称,这个是由自己定义的 工程目录结构mysite/ ————–&gt; 外层目录,名字可以更改,可以进行打包 ​ mysite/ —————&gt; 工程目录,保存代码和文件 ​ _init__.py —————&gt; 一个将mysite定义为包的空文件 ​ setting.py ————–&gt; 部署配置工程的文件(配置文件) ​ urls.py ————–&gt; URL路由的声明文件(路由文件) ​ wsgi.py ————–&gt; 基于WSGI的Web服务器的配置文件 ​ manage.py ————–&gt; 一个与django工程进行交互的命令工具 我们需要注意的是 settings.py 和 urls.py 用来配置工程和声明路由 三个步骤新建一个工程(上面的操作)1django-admin startproject mysite 修改工程,增加功能(重要且麻烦)创建一个具体应用12python manage.py startapp polls# polls为自己设置的应用名称 （在一个工程中，可以包含多个应用） 工程对应于一个网站，是配置和应用的集合 应用对应于特定功能，是具体功能的载体 修改应用的views.pyviews.py 中包含对某个http请求的响应,根据url的具体响应功能进行修改操作 修改url路由在urls.py中指定url与处理函数之间的路径关系,指定url与响应之间的关系 增加对本地路由的引用在全局路由文件(工程目录下的urls.py)增加对本应用路由文件的引用 1234567from django.urls import include#在urlpatterns中 添加urlpatterns = [ path('index2/', include('hello2app.urls')),] 上面代码中path函数的第一个参数是url,第二个参数是这个路由对应的处理函数. include()函数,用于引入其他路由文件 设置模板路径设置模板路径,让Django框架找到模板所在目录 在工程文件下,找到settings.py 找到TEMPLATES列表形式,这个是设置模板相关参数的位置.其中有个叫’DIRS’的表示路径,需要将本地保存模板的路径告诉工程,这里记得用单引号来表示路径,不然会报错. 123'DIRS': [os.path.join(BASE_DIR, 'hello2app/tempaltes')],# 指定templates所在路径#hello2app/templates 记得用单引号, os.path.join(BASE_DIR, )是将后面的两个路径合并 BASE_DIR指的是当前工程的主路径,hello2app/templates指的是在主路径下hello2app下的templates路径 调试运行web框架(在自己设置的工程目录下,上面的就是在mysite/下,与manage.py同一个级别下的目录) 1python manage.py runserver Django的MTV开发模式云端web系统的三个通用功能需求: 首先，需要进行数据组织,对数据进行存储查询等． 其次，对于web系统还需要通过浏览器进行web展示. 最后,需要对用户发起的请求进行数据的读取并反馈给浏览器正确的请求,所以需要控制逻辑. “此处添加图片” M: Models 模型与数据组织相关的功能 组织和存储数据的方法和模式,与数据模型相关的操作 T: Template 模板与表现相关的所有功能(页面显示) 页面展示风格和方式,与具体数据分离,用于定义表现风格 V: Views 视图针对请求选取数据的功能 选择哪些数据用于展示,指定显示模板,每个url对应一个回调函数 总结: M: Modes 模板 对应 数据 T: Templates 模板 对应 样式 V: Views 视图 对应 处理 用户提交http请求通过WSGI(web服务器接口)转化为url并且给到web框架的路由模块,路由模块将URL与特定功能相关联,而功能放在views的处理部分,views会选取特定的templates,也就是模板(css html js等)以及特定的数据models,这些数据可能来自于文件或者数据库,最终响应用户的请求. T在哪? Templates不会自动生成,因为它是页面展示的风格,需要用户自己去创建目录并且放入相关的模板文件]]></content>
